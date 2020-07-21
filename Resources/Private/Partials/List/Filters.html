@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<body>
+
+<f:section name="Main">
+
+  <div class="filters">
+    <f:form action="filterList" arguments="{mediaType: activeMediaType}">
+      <f:form.textfield name="query" value="{query}"/>
+      <input type="date" name="tx_mediacenter_mediacenter[formStartDate]" value="{formStartDate}"/>
+      <input type="date" name="tx_mediacenter_mediacenter[formEndDate]" value="{formEndDate}"/>
+      <f:form.select name="category" value="{category}">
+        <f:form.select.option></f:form.select.option>
+        <f:for each="{mediaCategories}" as="mediaCategory">
+          <f:form.select.option value="{mediaCategory.uid}" title="{mediaCategory.title}">{mediaCategory.title}</f:form.select.option>
+        </f:for>
+      </f:form.select>
+      <button type="submit">
+        <f:translate key="list.submit" extensionName="mediacenter"/>
+      </button>
+    </f:form>
+  </div>
+
+</f:section>
+</body>
+</html>

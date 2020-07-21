@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<body>
+
+<f:section name="Main">
+
+  <f:render partial="List/Filters" section="Main" arguments="{_all}" />
+
+  <f:render partial="List/Categories" section="Main" arguments="{_all}" />
+
+  <f:render partial="List/ResultsInfo" section="Main" arguments="{_all}" />
+
+  <div class="row">
+    <f:if condition="{medias}">
+      <f:for each="{medias}" as="mediaItem">
+        <div class="col-md-4">
+          <f:render partial="List/MediaItem" arguments="{_all}" section="Main"/>
+        </div>
+      </f:for>
+    </f:if>
+
+  </div>
+
+</f:section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<body>
+
+<f:section name="Main">
+
+  <div class="categories">
+    <f:link.action action="filterList" arguments="{mediaType: mediaType, query: query, formStartDate: formStartDate, formEndDate: formEndDate, category: category}" class="{f:if(condition: '{activeMediaType} == {mediaType}', then: 'active')}">
+      <f:translate key="mediatype.0" extensionName="mediacenter"/>
+      ({allMediaCount})
+    </f:link.action>
+    <f:for each="{mediaTypes}" as="mediaCountForType" key="mediaType">
+      <f:link.action action="filterList" arguments="{mediaType: mediaType, query: query, formStartDate: formStartDate, formEndDate: formEndDate, category: category}" class="{f:if(condition: '{activeMediaType} == {mediaType}', then: 'active')}">
+        <f:translate key="mediatype.{mediaType}" extensionName="mediacenter"/>
+        ({mediaCountForType})
+      </f:link.action>
+    </f:for>
+  </div>
+
+</f:section>
+</body>
+</html>

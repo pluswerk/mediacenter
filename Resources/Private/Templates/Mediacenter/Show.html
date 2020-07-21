@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<body>
+
+<f:layout name="Default"/>
+<f:section name="Main">
+  <f:link.action pageUid="{pageUid}">
+    <f:translate key="detail.back" extensionName="mediacenter"/>
+  </f:link.action>
+  <p>{media.teaser}</p>
+  <h1>{media.title}</h1>
+  <f:for each="{media.assets}" as="asset">
+    <f:media class="embed-item" file="{asset}" alt="{asset.alternative}" title="{asset.title}" width="900"/>
+  </f:for>
+
+  <f:if condition="{media.downloadable}">
+    <p><f:link.action action="download" arguments="{media: media}" target="_blank">
+      <f:translate key="detail.download_files" extensionName="mediacenter"/>
+    </f:link.action></p>
+  </f:if>
+
+  <f:format.raw>{media.text}</f:format.raw>
+
+  <f:link.action pageUid="{pageUid}">
+    <f:translate key="detail.back" extensionName="mediacenter"/>
+  </f:link.action>
+  <f:if condition="{media.relatedMedia}">
+    <div class="row">
+      <f:for each="{media.relatedMedia}" as="mediaItem">
+      <div class="col-md-6">
+        <f:render partial="List/MediaItem" arguments="{_all}" section="Main" />
+      </div>
+    </f:for>
+    </div>
+  </f:if>
+</f:section>
+</body>
+</html>

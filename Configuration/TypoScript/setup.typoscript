@@ -1,0 +1,10 @@
+plugin.tx_mediacenter {
+  view {
+    templateRootPath >
+    templateRootPaths.100 = {$plugin.tx_mediacenter.view.templateRootPath}
+    partialRootPath >
+    partialRootPaths.100 = {$plugin.tx_mediacenter.view.partialRootPath}
+    layoutRootPath >
+    layoutRootPaths.100 = {$plugin.tx_mediacenter.view.layoutRootPath}
+  }
+}

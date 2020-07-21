@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file target-language="de" datatype="plaintext" original="messages" product-name="tx-mediacenter">
+    <header/>
+    <body>
+      <trans-unit id="pluginWizard.title">
+        <target>Media Center</target>
+      </trans-unit>
+      <trans-unit id="pluginWizard.description">
+        <target>Bindet ein Media Center auf der Website ein.</target>
+      </trans-unit>
+
+      <trans-unit id="mediacenter">
+        <target>Mediendatensatz</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.title">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.teaser">
+        <target>Teasertext</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.date">
+        <target>Datum</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type">
+        <target>Medientyp</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.2">
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.3">
+        <target>Audio</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.4">
+        <target>Video</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.text">
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.downloadable">
+        <target>Sind Dateien herunterladbar?</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.related_media">
+        <target>Verknüpfte Medien</target>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_category">
+        <target>Kategorie</target>
+      </trans-unit>
+
+      <trans-unit id="media_category">
+        <target>Medienkategorie</target>
+      </trans-unit>
+      <trans-unit id="media_category.title">
+        <target>Titel</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

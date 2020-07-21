@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<body>
+
+<f:section name="Main">
+
+  <article class="teaser">
+    <f:if condition="{mediaItem.date}">
+      <p><f:format.date format="d.m.Y" date="{mediaItem.date}"/></p>
+    </f:if>
+    <div class="teaser__image">
+      <f:link.action action="show" arguments="{media: mediaItem}">
+        <f:image image="{mediaItem.assets.0}" width="300"/>
+      </f:link.action>
+    </div>
+    <div class="teaser__content">
+      <header class="teaser__header">
+        <p class="teaser__meta-text">{mediaItem.teaser}</p>
+        <h2>{mediaItem.title}</h2>
+      </header>
+      <footer class="teaser__footer">
+        <f:link.action action="show" arguments="{media: mediaItem}">
+          <f:translate key="list.more"/>
+        </f:link.action>
+      </footer>
+    </div>
+  </article>
+
+</f:section>
+</body>
+</html>

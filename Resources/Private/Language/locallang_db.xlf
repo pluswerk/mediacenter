@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="tx-mediacenter">
+    <header/>
+    <body>
+      <trans-unit id="pluginWizard.title">
+        <source>Mediacenter</source>
+      </trans-unit>
+      <trans-unit id="pluginWizard.description">
+        <source>Inserts a media center to the page.</source>
+      </trans-unit>
+
+      <trans-unit id="mediacenter">
+        <source>Media record</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.teaser">
+        <source>Teaser</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.date">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type">
+        <source>Media type</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.2">
+        <source>Images</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.3">
+        <source>Audio</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_type.4">
+        <source>Videos</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.downloadable">
+        <source>Are files downloadable?</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.related_media">
+        <source>Related media</source>
+      </trans-unit>
+      <trans-unit id="mediacenter.media_category">
+        <source>Category</source>
+      </trans-unit>
+
+      <trans-unit id="media_category">
+        <source>Media category</source>
+      </trans-unit>
+      <trans-unit id="media_category.title">
+        <source>Title</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

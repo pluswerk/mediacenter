@@ -1,0 +1,7 @@
+plugin.tx_mediacenter {
+  view {
+    templateRootPath = EXT:mediacenter/Resources/Private/Templates/
+    partialRootPath = EXT:mediacenter/Resources/Private/Partials/
+    layoutRootPath = EXT:mediacenter/Resources/Private/Layouts/
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="tx-mediacenter">
+    <body>
+      <trans-unit id="mediatype.0">
+        <source>All</source>
+      </trans-unit>
+      <trans-unit id="mediatype.2">
+        <source>Images</source>
+      </trans-unit>
+      <trans-unit id="mediatype.3">
+        <source>Audio</source>
+      </trans-unit>
+      <trans-unit id="mediatype.4">
+        <source>Videos</source>
+      </trans-unit>
+
+      <trans-unit id="detail.download_files">
+        <source>Download files</source>
+      </trans-unit>
+      <trans-unit id="detail.back">
+        <source>Back</source>
+      </trans-unit>
+
+      <trans-unit id="list.submit">
+        <source>Submit</source>
+      </trans-unit>
+      <trans-unit id="list.query_results">
+        <source>%s results for the term "%s"</source>
+      </trans-unit>
+      <trans-unit id="list.query_no_results">
+        <source>No results for the term "%s"</source>
+      </trans-unit>
+      <trans-unit id="list.no_query_with_results">
+        <source>%s entries were found</source>
+      </trans-unit>
+      <trans-unit id="list.more">
+        <source>More</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
